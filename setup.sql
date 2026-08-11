@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS surveyswap;
+CREATE USER IF NOT EXISTS 'surveyswap_app'@'127.0.0.1' IDENTIFIED BY 'surveyswap_app_2026';
+GRANT SELECT, INSERT, UPDATE, DELETE ON surveyswap.* TO 'surveyswap_app'@'127.0.0.1';
+FLUSH PRIVILEGES;
